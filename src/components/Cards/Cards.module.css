@@ -1,0 +1,9 @@
+.divCards{
+    display: flex;
+    justify-content:center;
+    gap: 1.5rem;
+    padding: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    
+}

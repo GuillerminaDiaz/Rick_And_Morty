@@ -1,0 +1,39 @@
+.divCard{
+    display: flex;
+    flex-direction: column-reverse;
+    width:fit-content;
+    height: fit-content;
+    background-color: rgb(48, 112, 215);
+    color: rgb(25, 43, 92);
+    border-radius: 8%;
+    padding: auto;
+    font-size: small;
+
+}
+
+.divCard:hover{
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.h2{
+    font-size: 1rem;
+}
+
+.xButton{
+    width: fit-content;
+    background-color: red;
+    color: white;
+    border: 0rem;
+    align-self: center;
+}
+
+.xButton:hover{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.img{
+    width: 10rem;
+    height: 10rem;
+}
+
