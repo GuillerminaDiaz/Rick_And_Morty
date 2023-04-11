@@ -1,15 +1,14 @@
 import './App.css';
 import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+
+
 
 const URL_BASE= 'https://be-a-rym.up.railway.app/api/character';
 const API_KEY= '01c32bd903d2.7111a52bfa816b6df674';

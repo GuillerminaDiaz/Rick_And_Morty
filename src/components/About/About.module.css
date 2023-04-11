@@ -1,0 +1,27 @@
+.aboutDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(56, 213, 61,.5);
+    border-radius: 50%;
+    height: 400px;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+.h1{
+    font-size: x-large;
+    color: rgb(94, 190, 190);
+    font-family:  'Segoe UI', Arial;
+    font-weight: bolder;
+}
+
+.text{
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.img{
+    transform: scale(0.4) ;
+-webkit-transform: scale(0.4) ;
+-moz-transform: scale(0.4) ;
+}

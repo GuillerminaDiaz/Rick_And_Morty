@@ -1,0 +1,33 @@
+.detailDiv{
+    flex-wrap: wrap-reverse;
+    margin: 5rem;
+    display: flex;
+    background-color: rgba(96, 96, 96, .65);
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(41, 182, 41);
+    font-weight: bold;
+    height: 500px;
+    align-content: space-around;
+    border-radius: 2rem;
+}
+
+.divText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text{
+    margin: .5rem;
+    font-family:  'Segoe UI', Arial;
+    
+}
+
+.image{
+    border-radius: 50%;
+    box-shadow: inset;
+    
+}

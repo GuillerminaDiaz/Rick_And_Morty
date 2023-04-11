@@ -1,0 +1,44 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.divButtons{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button{
+    height: 2rem;
+    width: 4rem;
+    background-color: rgb(17, 227, 70) ;
+    border-radius: 1rem;
+    border: .2rem solid rgb(58, 199, 255);
+    margin: 1rem;
+    font-family: 'Segoe UI', Arial;
+    
+    
+}
+
+.button:hover{
+    background-color: rgb(58, 199, 255);  
+    transform: scale(1.1) ;
+-webkit-transform: scale(1.1) ;
+-moz-transform: scale(1.1) ; 
+}
+
+.img{
+    position: static;
+    align-self: center;
+    width: 40rem;
+    height: 12rem;
+    transition: 1.5s;
+}
+
+.img:hover{
+    transform: scale(0.8) ;
+    -webkit-transform: scale(0.8) ;
+    -moz-transform: scale(0.8) ;
+
+}

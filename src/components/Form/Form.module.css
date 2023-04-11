@@ -1,0 +1,45 @@
+.divForm{
+    margin: 3rem;
+    display: flex;
+    background-color: rgba(2, 2, 2,.7);
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(41, 182, 41);
+    font-weight: bold;
+    height: 600px;
+}
+
+.submitButton{
+    opacity: 100%;
+    margin-top: .5rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8%;
+    background-color: rgb(161, 233, 233);
+    color: rgb(7, 77, 77);
+    font-weight: bolder;
+}
+
+.submitButton:hover{
+    transform: scale(1.2) ;
+-webkit-transform: scale(1.2) ;
+-moz-transform: scale(1.2) ;
+}
+
+.input{
+    width: 18rem;
+    min-height: 2rem;
+}
+
+.img{
+    transform: scale(0.8) ;
+-webkit-transform: scale(0.8) ;
+-moz-transform: scale(0.8) ;
+}
+
+.p{
+    color: red;
+    margin: .2rem;
+    font-size: x-small;
+}

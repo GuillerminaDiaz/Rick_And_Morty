@@ -1,5 +1,7 @@
 import { useState } from "react";
-import validation from "./validation";
+import validation from "../Validation/validation";
+import style from './Form.module.css';
+import logo from '../../img/rickLogo.jpg'
 
 const Form = ({login})=>{
     const [userData, setUserData]= useState({
@@ -7,10 +9,7 @@ const Form = ({login})=>{
         password:''
     })
 
-    const [errors, setErrors] = useState({
-        email:'',
-        password:''
-    })
+    const [errors, setErrors] = useState({})
 
     const handleChange= (event)=>{
         setUserData({
@@ -26,14 +25,17 @@ const Form = ({login})=>{
     }
 
     return(
-        <form>
+        <form onSubmit={handleSubmit}>
+            <div className={style.divForm}>
+            <img src={logo} alt="Rick and Morty logo" className={style.img}/>
             <label htmlFor="email">Username:</label>
-            <input type="text" name='email' value={userData.email} onChange={handleChange}/>
-            {errors.email && <p style={{color: 'red'}}>{errors.email}</p>}
+            <input type="text" name='email' value={userData.email} onChange={handleChange} className={style.input}/>
+            {errors.email && <p className={style.p}>{errors.email}</p>}
             <label htmlFor="password">Password:</label>
-            <input type="text" name='password' value={userData.password} onChange={handleChange}/>
-            {errors.password && <p style={{color: 'red'}}>{errors.password}</p>}
-            <button type='submit' onClick={handleSubmit}>Submit</button>
+            <input type="text" name='password' value={userData.password} onChange={handleChange} className={style.input}/>
+            {errors.password && <p className={style.p}>{errors.password}</p>}
+            <button type='submit' className={style.submitButton}>Submit</button>
+            </div>
         </form>
     )
 }
