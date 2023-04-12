@@ -7,6 +7,7 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
+import Favorites from './components/Favorites/Favorites';
 
 
 
@@ -54,7 +55,7 @@ function App() {
    
    useEffect(() => {
       !access && navigate('/');
-   }, [access]);
+   }, [access, navigate]);
 
    return (
       <div className='App'>
@@ -66,6 +67,7 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/detail/:id' element={<Detail/>}/>
             <Route path='/' element={<Form login={login}/>}/>
+            <Route path= '/favorites' element={<Favorites characters={characters}/>}/>
          </Routes>
       </div>
    );
