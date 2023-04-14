@@ -17,6 +17,7 @@ const Card=({id, name, status, species,gender,origin,image, onClose, addFav, rem
       }else{
          setIsFav(true)
          addFav({id, name, status, species,gender,origin,image})
+         
       }
    }
 
@@ -35,24 +36,26 @@ const Card=({id, name, status, species,gender,origin,image, onClose, addFav, rem
         
          <button onClick={handleFavorite} className={style.heart}>{isFav? '❤️' : '🤍'}</button>
              
-         { location.pathname!=='/favorites' && <button onClick={() => onClose(id)} className={style.xButton}>X</button>}
+         
+        
 
          <div className={style.divText}>
 
-         <NavLink to={`/detail/${id}`}>
+         <NavLink to={`/detail/${id}`} className={style.link}>
             <h2>{name}</h2>
          </NavLink>
 
-         <h2 className={style.h2}>{status}</h2>
-
+         {/* <h2 className={style.h2}>{status}</h2> */}
+         <img src={image} alt='' className={style.img}/> 
          <h2 className={style.h2}>{species}</h2>
+         
+         { location.pathname!=='/favorites' && <button onClick={() => onClose(id)} className={style.xButton}>X</button>}
+         {/* <h2 className={style.h2}>{gender}</h2>
 
-         <h2 className={style.h2}>{gender}</h2>
-
-         <h2 className={style.h2}>{origin}</h2>
+         <h2 className={style.h2}>{origin}</h2> */}
 
          </div>
-         <img src={image} alt='' className={style.img}/> 
+        
          </div>
    );
 }

@@ -8,3 +8,19 @@
     margin-top: 5rem;
     position: relative;
 }
+
+.divSelect{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.selectors{
+    height: 2rem;
+    width: 7rem;
+    background-color: rgb(58, 199, 255) ;
+    border-radius: 1rem;
+    border: .2rem solid rgb(17, 227, 70);
+    margin: 1rem;
+    font-family: 'Segoe UI', Arial;
+}

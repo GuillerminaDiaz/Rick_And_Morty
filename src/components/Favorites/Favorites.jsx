@@ -20,19 +20,23 @@ const Favorites = () => {
     }
 
     return(
-        <div className={style.divFav}>
-            <select onChange={handleOrder}>
+        <div>
+            <div className={style.divSelect}>
+            <select onChange={handleOrder} className={style.selectors}>
+                <option>Order</option>
                 <option value="A">Ascendente</option>
                 <option value="D">Descendente</option>
             </select>
-            <select onChange={handleFilter}>
+            <select onChange={handleFilter} className={style.selectors}>
+                <option>Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Genderless">Genderless</option>
                 <option value="unknown">Unknown</option>
                 <option value="allCharacters">All Characters</option>
             </select>
-
+            </div>
+            <div className={style.divFav}>
             {
                 myFavorites?.map(({id, name, status, species, gender, origin, image}) => {
                     return(
@@ -50,7 +54,7 @@ const Favorites = () => {
                     )
                 })
             }
-        
+        </div>
         </div>
     )
 

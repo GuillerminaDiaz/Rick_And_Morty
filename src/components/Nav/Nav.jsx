@@ -11,10 +11,10 @@ const Nav = ({onSearch, logout}) => {
             <SearchBar onSearch={onSearch}/>
             <div className={style.divButtons}>
             <button className={style.button}>
-                <NavLink to='about'>About</NavLink>
+                <NavLink to='about' className={style.link}>About</NavLink>
             </button>
             <button className={style.button}>
-            <NavLink to='home'>Home</NavLink>
+            <NavLink to='home' className={style.link}>Home</NavLink>
             </button>
             <button onClick={()=> navigate('/favorites')} className={style.button}>Favorites</button>
             <button onClick={logout} className={style.button}>

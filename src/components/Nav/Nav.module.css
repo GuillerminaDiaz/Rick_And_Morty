@@ -11,7 +11,7 @@
 
 .button{
     height: 2rem;
-    width: 4rem;
+    width: 5rem;
     background-color: rgb(17, 227, 70) ;
     border-radius: 1rem;
     border: .2rem solid rgb(58, 199, 255);
@@ -41,4 +41,9 @@
     -webkit-transform: scale(0.8) ;
     -moz-transform: scale(0.8) ;
 
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(69, 30, 69)
 }
