@@ -1,22 +1,25 @@
 .aboutDiv{
     display: flex;
     flex-direction: column;
-    background-color: rgba(56, 213, 61,.5);
-    border-radius: 50%;
+    background-color: rgba(56, 213, 61, 0.693);
+    border-radius: 20rem;
     height: 400px;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    align-items: center;
+    margin-top: 6rem;
+    
 }
 .h1{
-    font-size: x-large;
-    color: rgb(94, 190, 190);
+    font-size:xx-large;
+    color: rgb(40, 136, 136);
     font-family:  'Segoe UI', Arial;
     font-weight: bolder;
 }
 
 .text{
     color: black;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
 }
 

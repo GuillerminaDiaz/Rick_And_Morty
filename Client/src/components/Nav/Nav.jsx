@@ -8,8 +8,8 @@ const Nav = ({onSearch, logout}) => {
     const navigate= useNavigate()
     return(
         <nav className={style.nav}>
+            {/* <div className={style.divButtons}> */}
             <SearchBar onSearch={onSearch}/>
-            <div className={style.divButtons}>
             <button className={style.button}>
                 <NavLink to='about' className={style.link}>About</NavLink>
             </button>
@@ -20,8 +20,8 @@ const Nav = ({onSearch, logout}) => {
             <button onClick={logout} className={style.button}>
             {/* <NavLink to='/'>Log out</NavLink>     */}Log out
             </button>
-            </div>
             <img src={logoTitulo} alt="" className={style.img}/>
+            {/* </div> */}
         </nav>
     )
 }

@@ -1,13 +1,26 @@
-.divForm{
-    margin: 3rem;
+Form {
+    background-image: url('../../img/fondoLogin.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%; 
+    width:100vw;
+    height:100vh;
+    position: absolute;
     display: flex;
-    background-color: rgba(2, 2, 2,.7);
+    justify-content: flex-end;
+}
+
+.divForm{
+    padding-right: 20rem;
+    display: flex;
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     color: rgb(41, 182, 41);
     font-weight: bold;
     height: 600px;
+    width:fit-content;
+    position: absolute;
 }
 
 .submitButton{
@@ -32,11 +45,6 @@
     min-height: 2rem;
 }
 
-.img{
-    transform: scale(0.8) ;
--webkit-transform: scale(0.8) ;
--moz-transform: scale(0.8) ;
-}
 
 .p{
     color: red;

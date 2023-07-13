@@ -3,7 +3,7 @@
     flex-direction: column-reverse;
     width: 12rem;
     height: max-content;
-    background-color: rgb(48, 112, 215);
+    background-color: rgba(56, 185, 241, 0.904);
     color: rgb(25, 43, 92);
     border-radius: 8%;
     padding: auto;
@@ -24,6 +24,7 @@
 }
 
 .h2{
+    
     font-size: 1rem;
 }
 
@@ -55,5 +56,12 @@
 .link{
     text-decoration: none;
     color: rgb(31, 31, 86);
+}
+
+.divText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 

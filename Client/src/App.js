@@ -9,7 +9,7 @@ import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
 import Favorites from './components/Favorites/Favorites';
 
-const URL = 'http://localhost:3001/rickandmorty/login/';
+const URL = 'http://localhost:3001/rickandmorty/login';
 
 
 // const URL_BASE= 'https://be-a-rym.up.railway.app/api/character';
@@ -48,7 +48,7 @@ function App() {
          const { email, password } = userData;
          const { data }= await axios(URL + `?email=${email}&password=${password}`)
          const { access } = data;
-
+         
          setAccess(access);
          access && navigate('/home');
          
